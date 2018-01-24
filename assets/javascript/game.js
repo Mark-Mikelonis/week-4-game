@@ -7,7 +7,7 @@ var gems = ["gem1.png","gem2.png","gem3.png","gem4.png"];
 function getRandom(){
 	var min = Math.ceil(19);
 	var max = Math.ceil(120)
-	return Math.floor(Math.random() * (max-min+1))+min;
+	return Math.floor(Math.random() * (120-19+1))+19;
 }
 function getValue(){
 	return (Math.floor(Math.random() * 12 ) +1);
@@ -45,7 +45,6 @@ function setup(){
 		newImg.addClass("crystal-image");
 		newImg.attr("src", source);
 		newImg.attr("data-value", val);
-		// console.log($(this).attr('src'));
 		console.log(val);
 		$("#crystals").append(newImg);
 	}
