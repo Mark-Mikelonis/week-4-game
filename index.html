@@ -15,31 +15,37 @@
 <body>
 
 	<div class="container">
-		<div class="row">
+		<div class="page-header">
 			<h1>Crystals Collector!</h1>
 
 		</div>
 		<div class="row">
-			<div class="columns col-md-8 bg-light">
-			<p>You will be given a random number at the start of the game.</p>
-			<p>There are four crystals below. By clicking on a crystal you will add a sepcific amount of points to your total score.</p>
-			<p>You win the game by matching your total score to the random number, you lose if your total score goes above the random number.</p>
-			<p>The value of each crystal is hidden from you until you click on it.</p>
-			<p>Each time the game starts, the value of the crystals will change.</p>
+			<div class="col-2"></div>
+			<div class="col-6 columns">
+				<p>You will be given a random number at the start of the game.</p>
+				<p>There are four crystals below. By clicking on a crystal you will add a sepcific amount of points to your total score.</p>
+				<p>You win the game by matching your total score to the random number, you lose if your total score goes above the random number.</p>
+				<p>The value of each crystal is hidden from you until you click on it.</p>
+				<p>Each time the game starts, the value of the crystals will change.</p>
 			</div>
+			<div class="col-2"></div>
 		</div>
-		<div class="row justify-content-around">
-			<div class="columns col" id="randomNumber"></div>
-			<div class="columns col" id="winsLosses"></div>
+		<div class="row">
+			<span class="playerScore">
+				<div class="col-md-3 columns mx-auto" id="randomNumber"></div>
+				<div class="col-md-1 columns mx-auto" id="winsLosses"></div>
+			</span>
 		</div>
+		
 		<div class="row"></div>
 			<div id="crystals">
 			</div>
 		<div class="row">
+			<div class="col-md-3 columns"></div>
 			<h3>Your total score is:</h3>
 		</div>
 		<div class="row">
-			<div class="col-md-3" id="totalScore"></div>
+			<div class="col-md-3 columns" id="totalScore"></div>
 		</div>
 
 
